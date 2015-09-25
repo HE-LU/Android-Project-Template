@@ -1,0 +1,28 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Customize your theme here. -->
+	</style>
+
+	<style name="Widget.RTL.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
+		<item name="android:background">?attr/colorPrimary</item>
+		<item name="theme">@style/Theme.RTL.Toolbar</item>
+		<item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+	</style>
+
+	<style name="Widget.RTL.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+		<item name="background">@color/theme_action_mode_bg</item>
+	</style>
+
+	<style name="TextAppearance.RTL.Caption" parent="@style/TextAppearance.AppCompat.Caption">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">?android:textColorPrimary</item>
+	</style>
+
+	<style name="TextAppearance.RTL.Caption.Small" parent="@style/TextAppearance.RTL.Caption">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">?android:textColorPrimaryInverse</item>
+	</style>
+
+</resources>

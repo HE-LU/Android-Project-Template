@@ -1,0 +1,81 @@
+<cz.helu.rtl.layout.PercentLinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/layout_percent_linear"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<cz.helu.rtl.layout.PercentLinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:orientation="horizontal"
+		android:id="@+id/layout_percent_linear_horizontal_1"
+		app:layout_heightPercent="30%">
+
+		<TextView
+			android:id="@+id/top_left_textview_1"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:background="#333"
+			android:gravity="center"
+			android:text="TEST TEXT"
+			app:layout_widthPercent="50%"/>
+
+		<cz.helu.rtl.layout.PercentLinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			app:layout_widthPercent="50%">
+
+			<Button
+				android:id="@+id/top_right_button_ltr"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:gravity="center"
+				android:text="LTR"
+				app:layout_heightPercent="50%"/>
+
+			<Button
+				android:id="@+id/top_right_button_rtl"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:gravity="center"
+				android:text="RTL"
+				app:layout_heightPercent="50%"/>
+
+		</cz.helu.rtl.layout.PercentLinearLayout>
+	</cz.helu.rtl.layout.PercentLinearLayout>
+
+	<View
+		android:id="@+id/middle_space"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="#755"
+		app:layout_heightPercent="20%"/>
+
+	<cz.helu.rtl.layout.PercentLinearLayout
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:id="@+id/layout_percent_linear_horizontal_2"
+		app:layout_heightPercent="50%"
+		app:layout_widthPercent="60%">
+
+		<View
+			android:id="@+id/bottom_left"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:background="#779"
+			app:layout_widthPercent="50%"/>
+
+		<View
+			android:id="@+id/bottom_right"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:background="#335"
+			app:layout_widthPercent="50%"/>
+
+	</cz.helu.rtl.layout.PercentLinearLayout>
+</cz.helu.rtl.layout.PercentLinearLayout>

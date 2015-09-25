@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">RTL</string>
+
+
+	<!-- AB -->
+	<string name="ab_title_main">RTL test</string>
+	<string name="ab_title_percent">Percent Layout</string>
+	<string name="ab_title_rtl">RTL Example</string>
+	<string name="ab_title_percent_frame">Percent Layout - Frame</string>
+	<string name="ab_title_percent_relative">Percent Layout - Relative</string>
+	<string name="ab_title_percent_linear">Percent Layout - Linear</string>
+
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+</resources>

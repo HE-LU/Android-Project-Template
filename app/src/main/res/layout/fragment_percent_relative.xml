@@ -1,0 +1,73 @@
+<android.support.percent.PercentRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/layout_percent_relative"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/top_left_textview_1"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:background="#333"
+		android:gravity="center"
+		android:text="TEST TEXT"
+		app:layout_heightPercent="30%"
+		app:layout_widthPercent="50%"/>
+
+	<Button
+		android:id="@+id/top_right_button_ltr"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_alignParentTop="true"
+		android:layout_toEndOf="@+id/top_left_textview_1"
+		android:gravity="center"
+		android:text="LTR"
+		app:layout_heightPercent="15%"
+		app:layout_widthPercent="50%"/>
+
+	<Button
+		android:id="@+id/top_right_button_rtl"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_below="@+id/top_right_button_ltr"
+		android:layout_toEndOf="@+id/top_left_textview_1"
+		android:gravity="center"
+		android:text="RTL"
+		app:layout_heightPercent="15%"
+		app:layout_widthPercent="50%"/>
+
+
+	<View
+		android:id="@+id/middle_space"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_below="@+id/top_left_textview_1"
+		android:background="#755"
+		app:layout_heightPercent="20%"/>
+
+
+	<View
+		android:id="@+id/bottom_left"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/middle_space"
+		android:background="#779"
+		app:layout_heightPercent="50%"
+		app:layout_marginLeftPercent="20%"
+		app:layout_widthPercent="30%"/>
+
+	<View
+		android:id="@+id/bottom_right"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_alignParentEnd="true"
+		android:layout_below="@+id/middle_space"
+		android:background="#335"
+		app:layout_heightPercent="50%"
+		app:layout_marginRightPercent="20%"
+		app:layout_widthPercent="30%"/>
+</android.support.percent.PercentRelativeLayout>

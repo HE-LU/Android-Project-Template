@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="Theme.RTL.Toolbar" parent="Theme.AppCompat.Light">
+		<item name="android:textColorPrimary">@color/global_text_primary_inverse</item>
+		<item name="actionMenuTextColor">@color/global_text_primary_inverse</item>
+		<item name="android:textColorSecondary">@color/global_text_primary_inverse</item>
+		<item name="colorPrimary">@color/global_color_primary</item>
+		<item name="colorAccent">@color/global_color_accent</item>
+		<item name="actionModeStyle">@style/Widget.RTL.ActionMode</item>
+	</style>
+</resources>

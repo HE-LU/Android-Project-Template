@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="global_text_primary_inverse">#ddd</color>
+	<color name="global_color_primary">#333</color>
+	<color name="global_color_accent">#888</color>
+	<color name="theme_action_mode_bg">#000</color>
+</resources>
