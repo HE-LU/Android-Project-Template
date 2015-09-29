@@ -2,7 +2,6 @@ package cz.helu.rtl.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.percent.PercentRelativeLayout;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -77,23 +76,5 @@ public class PercentFragmentRelative extends Fragment
 
 	private void renderView()
 	{
-		mRootView.findViewById(R.id.top_right_button_ltr).setOnClickListener(new View.OnClickListener()
-		{
-			@Override
-			public void onClick(View v)
-			{
-				PercentRelativeLayout layout = ((PercentRelativeLayout) mRootView.findViewById(R.id.layout_percent_relative));
-				layout.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
-			}
-		});
-		mRootView.findViewById(R.id.top_right_button_rtl).setOnClickListener(new View.OnClickListener()
-		{
-			@Override
-			public void onClick(View v)
-			{
-				PercentRelativeLayout layout = ((PercentRelativeLayout) mRootView.findViewById(R.id.layout_percent_relative));
-				layout.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-			}
-		});
 	}
 }

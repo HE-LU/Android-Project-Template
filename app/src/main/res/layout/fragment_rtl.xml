@@ -1,81 +1,121 @@
-<cz.helu.rtl.layout.PercentLinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	android:id="@+id/layout_percent_linear"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
+	android:layout_height="match_parent">
 
-	<cz.helu.rtl.layout.PercentLinearLayout
+	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:orientation="horizontal"
-		android:id="@+id/layout_percent_linear_horizontal_1"
-		app:layout_heightPercent="30%">
+		android:layout_height="match_parent"
+		android:orientation="vertical">
 
 		<TextView
-			android:id="@+id/top_left_textview_1"
-			android:layout_width="0dp"
-			android:layout_height="match_parent"
-			android:background="#333"
-			android:gravity="center"
-			android:text="TEST TEXT"
-			app:layout_widthPercent="50%"/>
+			android:id="@+id/fragment_rtl_textview_orientation"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAlignment="center"
+			android:textSize="40sp"/>
 
-		<cz.helu.rtl.layout.PercentLinearLayout
-			android:layout_width="0dp"
-			android:layout_height="match_parent"
-			android:orientation="vertical"
-			app:layout_widthPercent="50%">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="10dp"
+			android:text="Arrow is pointing at horse that is running from RIGHT to LEFT."
+			android:textSize="20sp"/>
 
-			<Button
-				android:id="@+id/top_right_button_ltr"
-				android:layout_width="match_parent"
-				android:layout_height="0dp"
-				android:gravity="center"
-				android:text="LTR"
-				app:layout_heightPercent="50%"/>
 
-			<Button
-				android:id="@+id/top_right_button_rtl"
-				android:layout_width="match_parent"
-				android:layout_height="0dp"
-				android:gravity="center"
-				android:text="RTL"
-				app:layout_heightPercent="50%"/>
+		<LinearLayout
+			android:id="@+id/layout_rtl_linear_images"
+			android:layout_width="match_parent"
+			android:layout_height="140dp"
+			android:layout_gravity="center"
+			android:background="#777"
+			android:orientation="horizontal">
 
-		</cz.helu.rtl.layout.PercentLinearLayout>
-	</cz.helu.rtl.layout.PercentLinearLayout>
+			<ImageView
+				android:id="@+id/fragment_rtl_imageview_arrow"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.7"
+				android:scaleType="fitXY"
+				android:src="@drawable/arrow_normal"/>
 
-	<View
-		android:id="@+id/middle_space"
-		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:background="#755"
-		app:layout_heightPercent="20%"/>
+			<ImageView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.3"
+				android:scaleType="fitXY"
+				android:src="@drawable/horse"/>
 
-	<cz.helu.rtl.layout.PercentLinearLayout
-		android:layout_width="0dp"
-		android:layout_height="0dp"
-		android:layout_gravity="center"
-		android:orientation="horizontal"
-		android:id="@+id/layout_percent_linear_horizontal_2"
-		app:layout_heightPercent="50%"
-		app:layout_widthPercent="60%">
+		</LinearLayout>
 
-		<View
-			android:id="@+id/bottom_left"
-			android:layout_width="0dp"
-			android:layout_height="match_parent"
-			android:background="#779"
-			app:layout_widthPercent="50%"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp"
+			android:text="Forced Views"
+			android:textSize="20sp"/>
 
-		<View
-			android:id="@+id/bottom_right"
-			android:layout_width="0dp"
-			android:layout_height="match_parent"
-			android:background="#335"
-			app:layout_widthPercent="50%"/>
+		<TextView
+			android:id="@+id/fragment_rtl_textview_forced_first"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="100dp"
+			android:layout_marginTop="10dp"
+			android:background="#888"
+			android:text="جمهور"/>
 
-	</cz.helu.rtl.layout.PercentLinearLayout>
-</cz.helu.rtl.layout.PercentLinearLayout>
+		<EditText
+			android:id="@+id/fragment_rtl_edittext_forced_first"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="100dp"
+			android:layout_marginStart="10dp"
+			android:text="عربي"/>
+		<!--محم-->
+
+		<CheckBox
+			android:id="@+id/fragment_rtl_checkbox_forced"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp"
+			android:background="#aaa"
+			android:text="Forced CheckBox"/>
+
+		<Switch
+			android:id="@+id/fragment_rtl_switch_forced"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp"
+			android:background="#bbb"
+			android:text="Forced Switch"/>
+
+		<TextView
+			android:id="@+id/fragment_rtl_textview_forced_second"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp"
+			android:background="#ccc"
+			android:text="Forced TextView"/>
+
+		<EditText
+			android:id="@+id/fragment_rtl_edittext_forced_second"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:layout_marginStart="10dp"
+			android:text="Forced EditText"/>
+		<!--محم-->
+	</LinearLayout>
+
+</ScrollView>

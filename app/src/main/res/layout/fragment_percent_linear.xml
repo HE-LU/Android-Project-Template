@@ -7,10 +7,10 @@
 	android:orientation="vertical">
 
 	<cz.helu.rtl.layout.PercentLinearLayout
+		android:id="@+id/layout_percent_linear_horizontal_1"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:orientation="horizontal"
-		android:id="@+id/layout_percent_linear_horizontal_1"
 		app:layout_heightPercent="30%">
 
 		<TextView
@@ -55,11 +55,11 @@
 		app:layout_heightPercent="20%"/>
 
 	<cz.helu.rtl.layout.PercentLinearLayout
+		android:id="@+id/layout_percent_linear_horizontal_2"
 		android:layout_width="0dp"
 		android:layout_height="0dp"
 		android:layout_gravity="center"
 		android:orientation="horizontal"
-		android:id="@+id/layout_percent_linear_horizontal_2"
 		app:layout_heightPercent="50%"
 		app:layout_widthPercent="60%">
 

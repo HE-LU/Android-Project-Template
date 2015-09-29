@@ -9,6 +9,8 @@
 	<string name="ab_title_percent_frame">Percent Layout - Frame</string>
 	<string name="ab_title_percent_relative">Percent Layout - Relative</string>
 	<string name="ab_title_percent_linear">Percent Layout - Linear</string>
+	<string name="ab_title_rtl_normal">RTL - Normal</string>
+	<string name="ab_title_rtl_custom">RTL - Custom</string>
 
 	<string name="hello_world">Hello world!</string>
 	<string name="action_settings">Settings</string>

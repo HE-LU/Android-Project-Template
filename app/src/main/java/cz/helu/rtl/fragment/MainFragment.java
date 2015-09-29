@@ -50,7 +50,9 @@ public class MainFragment extends Fragment
 		final Button percentLinearButton = (Button) mRootView.findViewById(R.id.activity_main_button_percent_linear);
 		final Button percentRelativeButton = (Button) mRootView.findViewById(R.id.activity_main_button_percent_relative);
 		final Button percentFrameButton = (Button) mRootView.findViewById(R.id.activity_main_button_percent_frame);
+
 		final Button rtlExampleButton = (Button) mRootView.findViewById(R.id.activity_main_button_rtl_example);
+		final Button rtlCustomExampleButton = (Button) mRootView.findViewById(R.id.activity_main_button_rtl_custom_example);
 
 		percentLinearButton.setOnClickListener(new View.OnClickListener()
 		{
@@ -82,12 +84,23 @@ public class MainFragment extends Fragment
 			}
 		});
 
+
 		rtlExampleButton.setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
 			{
-				Intent intent = RTLActivity.newIntent(RTLApplication.getContext());
+				Intent intent = RTLActivity.newIntent(RTLApplication.getContext(), RTLActivity.LayoutTypeEnum.NORMAL);
+				startActivity(intent);
+			}
+		});
+
+		rtlCustomExampleButton.setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				Intent intent = RTLActivity.newIntent(RTLApplication.getContext(), RTLActivity.LayoutTypeEnum.CUSTOM);
 				startActivity(intent);
 			}
 		});

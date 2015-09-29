@@ -1,14 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-			  android:id="@+id/activity_main_layout"
+			  android:id="@+id/activity_rtl_layout"
 			  android:layout_width="match_parent"
 			  android:layout_height="match_parent"
 			  android:orientation="vertical">
 
 	<include layout="@layout/toolbar"/>
 
-	<fragment
-		android:id="@+id/fragment_main"
-		android:name="cz.helu.rtl.fragment.RTLFragment"
+	<FrameLayout
+		android:id="@+id/activity_rtl_container"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"/>
 

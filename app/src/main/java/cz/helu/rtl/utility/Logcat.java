@@ -1,4 +1,4 @@
-package cz.helu.rtl.utils;
+package cz.helu.rtl.utility;
 
 import cz.helu.rtl.RTLConfig;
 
