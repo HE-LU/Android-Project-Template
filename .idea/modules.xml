@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file:///mnt/Data/Linux Data/Android/Projects/BCK/RTL/RTL.iml" filepath="/mnt/Data/Linux Data/Android/Projects/BCK/RTL/RTL.iml" />
-      <module fileurl="file:///mnt/Data/Linux Data/Android/Projects/BCK/RTL/app/app.iml" filepath="/mnt/Data/Linux Data/Android/Projects/BCK/RTL/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Project-Template.iml" filepath="$PROJECT_DIR$/Android-Project-Template.iml" />
+      <module fileurl="file:///media/D/Linux data/Android/Projects/Android-Project-Template/app/app.iml" filepath="/media/D/Linux data/Android/Projects/Android-Project-Template/app/app.iml" />
     </modules>
   </component>
 </project>
